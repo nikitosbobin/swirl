@@ -1,0 +1,4 @@
+rootProject.name = 'swirl-parent'
+
+include ':swirl'
+include ':swirl-sample'
