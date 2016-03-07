@@ -67,6 +67,8 @@ public final class SwirlView extends ImageView {
         if (animate) {
           if (currentState == State.ON) {
             return R.drawable.swirl_draw_off_animation;
+          } else if (currentState == State.ERROR) {
+            return R.drawable.swirl_error_off_animation;
           }
         }
 
@@ -85,6 +87,8 @@ public final class SwirlView extends ImageView {
         if (animate) {
           if (currentState == State.ON) {
             return R.drawable.swirl_fp_to_error_state_animation;
+          } else if (currentState == State.OFF) {
+            return R.drawable.swirl_error_on_animation;
           }
         }
 
