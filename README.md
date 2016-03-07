@@ -39,6 +39,7 @@ Download
 --------
 
 Gradle:
+
 ```groovy
 compile 'com.mattprecious.swirl:swirl:0.1.0'
 ```
