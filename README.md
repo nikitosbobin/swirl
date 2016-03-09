@@ -1,7 +1,7 @@
 Swirl
 ======
 
-A simple, animated icon to use when interacting with the fingerprint reader.
+Android's animated fingerprint icon provided in a simple, standalone library.
 
 ![](images/sample.gif)
 
