@@ -6,6 +6,7 @@ import android.content.res.TypedArray;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
+import android.support.annotation.DrawableRes;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
@@ -46,7 +47,7 @@ public final class SwirlView extends ImageView {
   public void setState(State state, boolean animate) {
     if (state == this.state) return;
 
-    int resId = getDrawable(this.state, state, animate);
+    @DrawableRes int resId = getDrawable(this.state, state, animate);
     if (resId == 0) {
       setImageResource(resId);
     } else {
@@ -61,7 +62,7 @@ public final class SwirlView extends ImageView {
     this.state = state;
   }
 
-  private static int getDrawable(State currentState, State newState, boolean animate) {
+  @DrawableRes private static int getDrawable(State currentState, State newState, boolean animate) {
     switch (newState) {
       case OFF:
         if (animate) {
